@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+
 const db = new PrismaClient();
 
 async function seed() {
@@ -12,8 +13,6 @@ async function seed() {
 seed();
 
 function getJokes() {
-  // shout-out to https://icanhazdadjoke.com/
-
   return [
     {
       name: "Road worker",
